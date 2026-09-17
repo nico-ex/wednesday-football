@@ -1,0 +1,13 @@
+# This site is deliberately kept out of search results.
+#
+# The actual work is done by <meta name="robots" content="noindex, nofollow">
+# in index.html. Crawling is left ALLOWED here on purpose.
+#
+# Do not add "Disallow: /" to this file:
+#   1. Blocking crawlers stops Google from ever reading the noindex tag, so a
+#      URL someone links to can still end up listed - the opposite of intended.
+#   2. It would also break the WhatsApp / iMessage / Signal link preview, which
+#      fetches the page the same way a crawler does.
+
+User-agent: *
+Allow: /
